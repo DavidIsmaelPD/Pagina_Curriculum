@@ -1,0 +1,92 @@
+:root {
+    --dark-purple: #7D2E87;
+    --light-purple: #C263D4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.bg-prin {
+    background-color: var(--dark-purple);
+}
+
+.text-prin {
+    color: var(--dark-purple);
+}
+
+.btn-light-purple {
+    background-color: var(--light-purple);
+    color: white;
+    border: 2px solid var(--light-purple);
+    transition: all 0.3s ease;
+}
+
+.btn-light-purple:hover {
+    background-color: transparent;
+    color: var(--light-purple);
+    transform: scale(1.05);
+}
+
+.hero-section {
+    min-height: 100vh;
+    padding-top: 80px;
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(90, 0, 78, 0.95));
+    background-size: cover;
+    background-position: center;
+}
+
+.foto-perfil {
+    object-fit: cover;
+    border: 5px solid var(--light-purple);
+}
+
+/* Tarjetas */
+.tarjetas {
+    border-bottom: 5px solid var(--light-purple);
+    transition: transform 0.3s ease;
+}
+
+.tarjetas:hover {
+    transform: translateY(-10px);
+}
+
+.tarjetas-main {
+    border-bottom: 5px solid white;
+}
+
+@media (min-width: 768px) {
+    .tarjetas-main {
+        transform: scale(1.05);
+    }
+}
+
+/* Barras de progreso */
+.progress {
+    height: 14px;
+}
+
+.barra {
+    background-color: var(--light-purple);
+}
+
+/* Iconos de redes */
+.icono-red {
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icono-red:hover {
+    color: var(--light-purple);
+    transform: translateY(-4px);
+}
+
+/* Evita que el menú fijo tape los títulos al navegar */
+section {
+    scroll-margin-top: 70px;
+}

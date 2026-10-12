@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portafolio Profesional</title>
+    <!-- CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- CDN ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="./estilos.css" />
+</head>
+
+<body>
+    <!-- Navbar responsivo con menú hamburguesa -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-prin fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">Mi Hoja de Vida</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuNavegacion" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNavegacion">
+                <ul class="navbar-nav ms-auto text-center mt-3 mt-lg-0">
+                    <li class="nav-item"><a class="nav-link px-3" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO: centrado con Flexbox -->
+    <header id="inicio" class="hero-section d-flex align-items-center justify-content-center text-center text-white">
+        <div class="container reveal-hero">
+            <img src="img/yo.jpg" id="fotoPerfil" class="rounded-circle foto-perfil mb-4 shadow" width="180"
+                height="180" />
+            <h1 class="display-4 fw-bold mb-2">David Ismael Pérez Díaz</h1>
+            <p class="lead mb-4">Estudiante en Ingeniería en Tecnologías de la Información</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                <a href="#proyectos" class="btn btn-light-purple btn-lg px-5 rounded-pill shadow-sm fw-bold">Ver
+                    proyectos</a>
+                <a href="#contacto" class="btn btn-outline-light btn-lg px-5 rounded-pill fw-bold">Contáctame</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SOBRE MÍ -->
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 text-center reveal-title">
+                <h2 class="fw-bold text-prin mb-3">Sobre mí</h2>
+                <p class="text-muted">Actulamente me encuentro cursando la carrea de ITIN en la Universidad de las
+                    Fuerzas Armadas. Soy una persona que se adapta a las situaciones que le presenten y siempre trato de
+                    dar lo mejor de mi para mejorar las cosas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTAFOLIO: 1 tarjeta por fila en móvil (col-12), 3 en escritorio (col-md-4) -->
+    <section id="proyectos" class="container py-5">
+        <h2 class="text-center mb-5 fw-bold text-prin reveal-title">Proyectos</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-4 mb-4 reveal-card">
+                <div class="card h-100 shadow-sm border-0 tarjetas">
+                    <div class="card-body p-4">
+                        <h3 class="h4 fw-bold text-prin">Maquetado simple de una página web</h3>
+                        <p class="text-muted mt-3">Implementación de un sitio multipropósito estructurado mediante
+                            etiquetas semánticas. Utilizando el sistema de rejilla (Grid System) y contenedores de
+                            Bootstrap para garantizar adaptabilidad móvil inmediata, complementado con CSS personalizado
+                            para tipografía, paleta de colores y espaciados propios.
+                        </p>
+                        <span class="badge bg-prin me-1">HTML</span>
+                        <span class="badge bg-prin">Bootstrap</span>
+                        <span class="badge bg-prin">CSS</span>
+                    </div>
+                    <div class="card-footer bg-white border-0 pb-4">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4 reveal-card">
+                <div class="card h-100 shadow-sm border-0 tarjetas-main bg-prin text-white">
+                    <div class="card-body p-4">
+                        <h3 class="h4 fw-bold">Página de formularios con conexión a base de datos</h3>
+                        <p class="mt-3">Interfaz interactiva de registro o contacto diseñada con componentes de
+                            formulario de Bootstrap. JavaScript se encarga de la validación del lado del cliente en
+                            tiempo real (formato de correo, campos requeridos y contraseñas) antes de enviar la
+                            petición. El backend en PHP procesa la solicitud mediante consultas preparadas para
+                            almacenar los registros de forma segura en una base de datos relacional.
+                        </p>
+                        <span class="badge bg-light text-dark me-1">PHP</span>
+                        <span class="badge bg-light text-dark me-1">MySQL</span>
+                        <span class="badge bg-light text-dark">JavaScript</span>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-4">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4 reveal-card">
+                <div class="card h-100 shadow-sm border-0 tarjetas">
+                    <div class="card-body p-4">
+                        <h3 class="h4 fw-bold text-prin">Diseño de una landing page para ventas</h3>
+                        <p class="text-muted mt-3">Página de aterrizaje enfocada en captar clientes potenciales mediante
+                            una narrativa visual clara. Incorpora una sección principal de alto impacto
+                            con llamada a la acción, carrusel o cuadrícula de características destacadas, tabla de
+                            precios comparativa y bloque de testimonios de clientes.]</p>
+                        <span class="badge bg-prin me-1">HTML</span>
+                        <span class="badge bg-prin me-1">CSS</span>
+                        <span class="badge bg-prin">JavaScript</span>
+                    </div>
+                    <div class="card-footer bg-white border-0 pb-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES: barras de progreso -->
+    <section id="habilidades" class="container py-5">
+        <h2 class="text-center mb-5 fw-bold text-prin reveal-title">Habilidades técnicas</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 reveal-left">
+                <!-- Ajusta los porcentajes a tu nivel real -->
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between"><span class="fw-semibold">PHP</span><span
+                            class="text-muted">20%</span></div>
+                    <div class="progress">
+                        <div class="progress-bar barra" role="progressbar" style="width: 2%" aria-valuenow="20"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between"><span class="fw-semibold">MySQL</span><span
+                            class="text-muted">55%</span></div>
+                    <div class="progress">
+                        <div class="progress-bar barra" role="progressbar" style="width: 55%" aria-valuenow="55"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between"><span class="fw-semibold">JavaScript</span><span
+                            class="text-muted">30%</span></div>
+                    <div class="progress">
+                        <div class="progress-bar barra" role="progressbar" style="width: 30%" aria-valuenow="30"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between"><span class="fw-semibold">HTML</span><span
+                            class="text-muted">75%</span></div>
+                    <div class="progress">
+                        <div class="progress-bar barra" role="progressbar" style="width: 75%" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between"><span class="fw-semibold">CSS</span><span
+                            class="text-muted">75%</span></div>
+                    <div class="progress">
+                        <div class="progress-bar barra" role="progressbar" style="width: 75%" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESCARGA DE CV -->
+    <section id="cv" class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 text-center p-5 bg-prin text-white rounded shadow reveal-title">
+                <h2 class="fw-bold mb-3">Mi currículum</h2>
+                <p class="mb-4">Aquí puedes descargar mi cv o visulizarlo sin descargalo.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                    <a href="Curriculum.pdf" target="_blank" rel="noopener"
+                        class="btn btn-light btn-lg rounded-pill fw-bold text-prin">Ver CV</a>
+                    <a href="Curriculum.pdf" download="CV_David_Pérez.pdf"
+                        class="btn btn-light-purple btn-lg rounded-pill fw-bold">Descargar CV (PDF)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="container py-5">
+        <h2 class="text-center mb-5 fw-bold text-prin reveal-title">Contacto</h2>
+        <div class="row justify-content-center text-center">
+
+            <div class="col-12 col-md-4 mb-4 reveal-card">
+                <div class="p-4 rounded bg-white shadow-sm h-100">
+                    <h4 class="fw-bold mb-3">Teléfono</h4>
+                    <a href="tel:+593[TU_NUMERO]" class="text-decoration-none text-muted">
+                        +593 982231512
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4 reveal-card">
+                <div class="p-4 rounded bg-white shadow-sm h-100">
+                    <h4 class="fw-bold mb-3">Correo personal</h4>
+                    <a href="mailto:[tu@correo.com]" class="text-decoration-none text-muted">
+                        davdisma@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4 reveal-card">
+                <div class="p-4 rounded bg-white shadow-sm h-100">
+                    <h4 class="fw-bold mb-3">Correo institucional</h4>
+                    <a href="mailto:[tu@institucion.edu.ec]" class="text-decoration-none text-muted">
+                        diperez3@espe.edu.ec
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- FOOTER: redes y correo -->
+    <footer class="bg-prin text-white text-center py-4 mt-5">
+        <div class="container">
+            <div class="d-flex justify-content-center gap-4 mb-3">
+                <a href="https://www.linkedin.com/in/david-perez-90370a403/" target="_blank" rel="noopener"
+                    class="icono-red" aria-label="LinkedIn">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75Zm6.5 0h3.8v1.54h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.75 2.63 4.75 6.05V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21h-4V9.75Z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/DavidIsmaelPD" target="_blank" rel="noopener" class="icono-red"
+                    aria-label="GitHub">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z" />
+                    </svg>
+                </a>
+                <a href="mailto:davdisma@gmail.com" class="icono-red" aria-label="Correo">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5L12 11.9 19.8 6H4.2ZM20 7.9l-7.4 5.6a1 1 0 0 1-1.2 0L4 7.9V18h16V7.9Z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="mb-0 small">&copy; 2026 David Ismael Pérez Díaz.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
